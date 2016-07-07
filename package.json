@@ -1,6 +1,6 @@
 {
   "name": "mymodule",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "game test",
   "main": "index.js",
   "scripts": {
