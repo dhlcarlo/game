@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Users\\cramirez\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v4.4.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\Users\\cramirez\\Desktop\\app',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory D:\Users\cramirez\AppData\Roaming\npm-cache\mymodule\1.0.4\package.tgz not in flight; packing
+9 verbose correctMkdir D:\Users\cramirez\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle mymodule@1.0.4~prepublish: mymodule@1.0.4
+11 silly lifecycle mymodule@1.0.4~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'D:\\Users\\cramirez\\AppData\\Roaming\\npm-cache\\mymodule\\1.0.4\\package.tgz',
+12 verbose tar pack   'D:\\Users\\cramirez\\Desktop\\app' ]
+13 verbose tarball D:\Users\cramirez\AppData\Roaming\npm-cache\mymodule\1.0.4\package.tgz
+14 verbose folder D:\Users\cramirez\Desktop\app
+15 verbose addLocalTarball adding from inside cache D:\Users\cramirez\AppData\Roaming\npm-cache\mymodule\1.0.4\package.tgz
+16 verbose correctMkdir D:\Users\cramirez\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd mymodule@1.0.4
+18 verbose afterAdd D:\Users\cramirez\AppData\Roaming\npm-cache\mymodule\1.0.4\package\package.json not in flight; writing
+19 verbose correctMkdir D:\Users\cramirez\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd D:\Users\cramirez\AppData\Roaming\npm-cache\mymodule\1.0.4\package\package.json written
+21 silly publish { name: 'mymodule',
+21 silly publish   version: '1.0.4',
+21 silly publish   description: 'game test',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/dhlcarlo/game.git' },
+21 silly publish   keywords: [ 'buscame' ],
+21 silly publish   author:
+21 silly publish    { name: 'Carlos Ramirez',
+21 silly publish      email: 'cramirez@zemsania.com',
+21 silly publish      url: 'http://virtualdb.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { express: '^4.10.6', mysql: '^2.5.4' },
+21 silly publish   gitHead: '1c548693c8ae38cb6f3e0a882a60b38f0d6ddcaf',
+21 silly publish   bugs: { url: 'https://github.com/dhlcarlo/game/issues' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   homepage: 'https://github.com/dhlcarlo/game#readme',
+21 silly publish   _id: 'mymodule@1.0.4',
+21 silly publish   _shasum: '139986e861d84baa78a2f35684da8658a56ce195',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name mymodule
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'mymodule',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'mymodule',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/mymodule
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading D:\Users\cramirez\AppData\Roaming\npm-cache\mymodule\1.0.4\package.tgz
+30 verbose request uri https://registry.npmjs.org/mymodule
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:49:33
+33 verbose request using bearer token for auth
+34 verbose request id 6c1e73486e15327e
+35 http request PUT https://registry.npmjs.org/mymodule
+36 http 403 https://registry.npmjs.org/mymodule
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '102',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 07 Jul 2016 14:49:05 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lhr6335-LHR',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1467902945.341356,VS0,VE591',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating D:\Users\cramirez\AppData\Roaming\npm-cache\registry.npmjs.org\mymodule on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "mymodule". Are you logged in as the correct user? : mymodule
+40 verbose stack     at makeError (D:\Users\cramirez\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (D:\Users\cramirez\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+40 verbose stack     at Request._callback (D:\Users\cramirez\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+40 verbose stack     at Request.self.callback (D:\Users\cramirez\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:199:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (D:\Users\cramirez\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1036:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (D:\Users\cramirez\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid mymodule
+43 verbose cwd D:\Users\cramirez\Desktop\app
+44 error Windows_NT 6.1.7601
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "D:\\Users\\cramirez\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v4.4.2
+47 error npm  v3.8.6
+48 error code E403
+49 error you do not have permission to publish "mymodule". Are you logged in as the correct user? : mymodule
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
