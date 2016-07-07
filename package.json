@@ -1,0 +1,23 @@
+{
+  "name": "nastygame",
+  "version": "1.0.0",
+  "description": "game test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhlcarlo/Presidents-Names.git"
+  },
+  "keywords": [
+    "buscame"
+  ],
+  "author": "Carlos Ramirez <cramirez@zemsania.com> (http://virtualdb.com)",
+  "license": "ISC",
+  "dependencies": {
+   "express": "^4.10.6",
+    "mysql": "^2.5.4"
+  }
+  
+}
