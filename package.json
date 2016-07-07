@@ -1,6 +1,6 @@
 {
   "name": "nastygame",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "game test",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,7 @@
   "author": "Carlos Ramirez <cramirez@zemsania.com> (http://virtualdb.com)",
   "license": "ISC",
   "dependencies": {
-   "express": "^4.10.6",
+    "express": "^4.10.6",
     "mysql": "^2.5.4"
   }
-  
 }
