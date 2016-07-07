@@ -1,6 +1,6 @@
 {
   "name": "nastygame",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "game test",
   "main": "index.js",
   "scripts": {
