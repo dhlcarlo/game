@@ -1,2 +1,2 @@
-var myModule = require("./myModule55");
+var myModule = require("./mymodule55");
 console.log("hola " + myModule.name());
